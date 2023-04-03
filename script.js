@@ -8,7 +8,7 @@ function verify(r1, r2, r3, gogo) {
                 console.log('R3' + r3 + 'SOBREMESA selecionada');
                 console.log(gogo.classList);
                 gogo.classList.add('gol');
-                gogo.innerHTML = 'Fazer pedido';
+                gogo.innerHTML = 'Fechar pedido';
                 gogo.setAttribute('onclick', 'actionWpp()');
             }
         }
@@ -64,7 +64,7 @@ function generateMsg() {
     let tituSobreme = sobremeSelecionado.querySelector('.titu').textContent;
     let total = Number(prcPrato) + Number(prcBebida) + Number(prcSobreme);
 
-    return window.encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${tituPrato} x1 = ${prcPrato}\n- Bebida: ${tituBebida} x1 = ${prcBebida}\n- Sobremesa: ${tituSobreme} x1 = ${prcSobreme}\nTotal: ${total.toFixed(2)}`);
+    return window.encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${tituPrato} x1 = ${prcPrato}\n- Bebida: ${tituBebida} x1 = ${prcBebida}\n- Sobremesa: ${tituSobreme} x1 = ${prcSobreme}\nTotal: R$ ${total.toFixed(2)}`);
     //Olá, gostaria de fazer o pedido:
     //- Prato: Frango Yin Yang
     //- Bebida: Coquinha Gelada
