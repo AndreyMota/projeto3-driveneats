@@ -21,7 +21,12 @@
 
     <h2>Primeiro, seu prato</h2>
     <div class="pratos">
-        <div onclick= "escolheu(this, '.pratos')" class="box">a</div>
+        <div onclick= "escolheu(this, '.pratos')" class="box">
+            <img src="./images/prato.jpeg" alt="">
+            <h3 class="titu">Strogonoff, arroz e batata palha</h3>
+            <p>Arroz strogonoff e batata palha</p>
+            <h4>R$ <strong class="price">15.80</strong></h4>
+        </div>
         <div onclick= "escolheu(this, '.pratos')" class="box"></div>
         <div onclick= "escolheu(this, '.pratos')" class="box"></div>
         <div onclick= "escolheu(this, '.pratos')" class="box"></div>
@@ -30,6 +35,12 @@
 
     <h2>Agora, sua bebida</h2>
     <div class="bebidas">
+        <div onclick= "escolheu(this, '.bebidas')" class="box">
+            <img src="./images/prato.jpeg" alt="">
+            <h3 class="titu">Strogonoff, arroz e batata palha</h3>
+            <p>Arroz strogonoff e batata palha</p>
+            <h4>R$ <strong class="price">15.80</strong></h4>
+        </div>
         <div onclick='escolheu(this, ".bebidas")' class="box"></div>
         <div onclick="escolheu(this, '.bebidas')" class="box"></div>
         <div onclick="escolheu(this, '.bebidas')" class="box"></div>
@@ -40,6 +51,12 @@
 
     <h2>Por fim, sua sobremesa</h2>
     <div class="sobremesas">
+        <div onclick= "escolheu(this, '.sobremesas')" class="box">
+            <img src="./images/prato.jpeg" alt="">
+            <h3 class="titu">Strogonoff, arroz e batata palha</h3>
+            <p>Arroz strogonoff e batata palha</p>
+            <h4>R$ <strong class="price">15.80</strong></h4>
+        </div>
         <div onclick="escolheu(this, '.sobremesas')" class="box"></div>
         <div onclick="escolheu(this, '.sobremesas')" class="box"></div>
         <div onclick="escolheu(this, '.sobremesas')" class="box"></div>
@@ -47,9 +64,14 @@
         <div onclick="escolheu(this, '.sobremesas')" class="box"></div>
     </div>
 
-    <div class="gogo naoaparece">
-        pedir pedido por whatsapp
+    <div class="rodape">
+        <a target="_blank" class="botao">
+            <button class="gogo">
+                <p>Selecione os 3 itens para fechar o pedido</p>
+            </button>
+        </a>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
